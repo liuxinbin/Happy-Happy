@@ -1,0 +1,85 @@
+#container{
+	width:600px;
+	height:800px;
+	/* border:1px solid #000; */
+	margin:0 auto;
+    font-family: Arial;
+	background:#eee
+	position:relative;
+}
+#title{
+	margin:50px 0;
+	text-align:center;
+	font-size:50px;
+	color:#e8964c;
+}
+#levelTab>p{
+	margin-left:150px;
+	font-size:30px;
+	font-weight:bold;
+	color:#333;
+}
+#box{
+	position:relative;
+	width:400px;
+	height:400px;
+	margin:30px auto;
+	border-radius:5%;
+	box-shadow:2px 2px 10px #333;
+	background:#eee;
+}
+.cell{
+	width:90px;
+	height:90px;
+	margin:5px;
+	box-sizing:border-box;
+	box-shadow:2px 2px 5px #666;
+	border-radius:20%;
+	position:absolute;
+	cursor: pointer;
+}
+[id$="0"]{left:0;}
+[id$="1"]{left:100px;}
+[id$="2"]{left:200px;}
+[id$="3"]{left:300px;}
+[id^="c0"]{top:0}
+[id^="c1"]{top:100px}
+[id^="c2"]{top:200px}
+[id^="c3"]{top:300px}
+button{
+	display:block;
+	width:200px;
+	height:50px;
+	border-radius:10px;;
+	background:#5e779e;
+	color:#fff;
+	text-align:center;
+	border:0;
+	outline:0;
+	margin:0 auto;
+	font-size:30px;
+	font-weight:bold;
+}
+#shadowGameover{
+	display: none;
+	position:fixed;
+	background:rgba(0,0,0,0.5);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height:100%;
+}
+#shadowGameover>.shadowTab{
+	width: 300px;
+	height: 300px;
+	border-radius: 20px;
+	padding-top: 10px;
+	background: #fff;
+	margin: 260px auto 0;
+}
+#shadowGameover>.shadowTab>p{
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+}
